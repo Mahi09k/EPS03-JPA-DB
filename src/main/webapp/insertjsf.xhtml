@@ -7,9 +7,9 @@
 <body>
 <h:form>
 <h3>Insert data using (JSF)</h3>
-Employee ID : <h:inputText id="eid" value="#{}" /><br />
-Employee Name : <h:inputText id="ename" value="#{}" /><br />
-Employee Salary : <h:inputText id="esal" value="#{}" /><br />
+Employee ID : <h:inputText id="eid" value="#{emp.eid}" /><br />
+Employee Name : <h:inputText id="ename" value="#{emp.ename}" /><br />
+Employee Salary : <h:inputText id="esal" value="#{emp.esal}" /><br />
 <h:commandButton action="index" value="btninsert" />
 </h:form>
 
