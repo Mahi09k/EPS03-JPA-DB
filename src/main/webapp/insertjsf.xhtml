@@ -4,14 +4,15 @@
       xmlns:f="http://java.sun.com/jsf/core"
       xmlns:h="http://java.sun.com/jsf/html">
 
-<body>
+<h:body>
 <h:form>
-<h3>Insert data using (JSF)</h3>
-Employee ID : <h:inputText id="eid" value="#{emp.eid}" /><br />
-Employee Name : <h:inputText id="ename" value="#{emp.ename}" /><br />
-Employee Salary : <h:inputText id="esal" value="#{emp.esal}" /><br />
-<h:commandButton action="index" value="btninsert" />
+    <h3>Insert data using (JSF)</h3>
+    Employee ID : <h:inputText id="eid" value="#{emp.eid}" /><br />
+    Employee Name : <h:inputText id="ename" value="#{emp.ename}" /><br />
+    Employee Salary : <h:inputText id="esal" value="#{emp.esal}" /><br />
+    <h:commandButton action="#{emp.callEjbInsert}" value="Insert" />
 </h:form>
+<h:outputText value="#{emp.resultMessage}" rendered="#{not empty emp.resultMessage}" />
 
-</body>
+</h:body>
 </html>

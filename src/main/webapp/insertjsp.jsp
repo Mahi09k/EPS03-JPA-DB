@@ -8,7 +8,7 @@
 </head>
 <body>
 <h3> Insert Data using (JSP)</h3>
-<form action="" method="get">
+<form action="EmployeeServlet" method="get">
 Employee ID : <input type="text" name=eid/><br>
 Employee Name : <input type="text" name=ename/><br>
 Employee Salary : <input type="text" name=esal/><br>
